@@ -1,10 +1,13 @@
 import React from 'react';
+import Track from '../Track/Track';
 import './Tracklist.module.css';
 
-function Tracklist() {
+function Tracklist({tracks}) {
     return(
         <div className='Tracklist'>
-            <button className='SaveButton'>Save to Spotify</button>
+            {tracks.map(track => (
+                <Track key={track.id} track={track} />
+            ))}
         </div>
     );
 }

@@ -1,24 +1,27 @@
-import React, {useState} from 'react';
+
+import React, { useState } from 'react';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
-import Tracklist from '../Tracklist/Tracklist';
+import Playlist from '../Playlist/Playlist';
+import './App.module.css';
 
 function App() {
+  const [searchResults, setSearchResults] = useState([
+    { id: 1, name: 'Song 1', artist: 'Artist 1', album: 'Album 1' },
+    { id: 2, name: 'Song 2', artist: 'Artist 2', album: 'Album 2' },
+    { id: 3, name: 'Song 3', artist: 'Artist 3', album: 'Album 3' },
+  ]);
 
-    const [searchResults, setSearchResults] = useState([
-        {id: 1, name: 'Song1', artist: 'Artist1', album: 'Album1'},
-        {id: 2, name: 'Song2', artist: 'Artist2', album: 'Album2'},
-        {id: 3, name: 'Song3', artist: 'Artist3', album: 'Album3'}
-    ]);
-
-    return(
-        <div className='App'>
-            <h1>Jamming</h1>
-            <SearchBar />
-            <Tracklist />
-            <SearchResults searchResults={searchResults}/>
-        </div>
-    );
+  return (
+    <div className="App">
+      <h1>Jammming</h1>
+      <SearchBar />
+      <div className="App-content">
+        <SearchResults searchResults={searchResults} />
+        <Playlist />
+      </div>
+    </div>
+  );
 }
 
 export default App;

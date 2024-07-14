@@ -1,15 +1,13 @@
 import React from 'react';
-import Track from '../Track/Track';
-import './Tracklist.module.css';
+import './Track.module.css';
 
-function Tracks({tracks}) {
+function Track({track}) {
     return (
         <div className='Tracklist'>
-            {tracks.map(track => {
-                <Track key={tracks.id} track={track} />
-            })}
+            <h3>{track.name}</h3>
+            <p>{track.artist} | {track.album}</p>
         </div>
     );
 }
 
-export default Tracklist;
+export default Track;
