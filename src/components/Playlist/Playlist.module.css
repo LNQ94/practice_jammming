@@ -1,0 +1,43 @@
+.Playlist {
+  background-color: #f0f8ff; /* Light blue background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.Playlist h2 {
+  color: #2e8b57; /* Sea green text color */
+  cursor: pointer;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.Playlist input {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid #2e8b57; /* Sea green border */
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.Tracklist {
+  margin-top: 20px;
+}
+
+.SaveButton {
+  background-color: #4ca1af; /* Turquoise green background */
+  color: #ffffff; /* White text color */
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.SaveButton:hover {
+  background-color: #387c85; /* Darker turquoise green on hover */
+}
+

@@ -1,0 +1,9 @@
+.SearchResults {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.SearchResults .Tracklist {
+  margin-top: 20px;
+}

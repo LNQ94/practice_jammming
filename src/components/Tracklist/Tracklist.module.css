@@ -1,0 +1,14 @@
+.Tracklist {
+  width: 100%;
+  max-width: 800px;
+}
+
+.Tracklist .Track {
+  background-color: #f0f8ff; /* Light blue background */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}

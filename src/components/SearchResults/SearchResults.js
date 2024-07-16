@@ -1,12 +1,12 @@
 import React from 'react';
 import Tracklist from '../Tracklist/Tracklist';
-import './SearchResults.module.css';
+import styles from './SearchResults.module.css';
 
-function SearchResults({searchResults}) {
+function SearchResults({searchResults, onAdd}) {
     return (
         <div className="SearchResults">
             <h2>Search Results</h2>
-            <Tracklist tracks={searchResults}/>
+            <Tracklist tracks={searchResults} onAdd={onAdd} isRemoval={false} />
         </div>
     );
     

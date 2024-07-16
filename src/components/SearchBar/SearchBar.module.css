@@ -1,0 +1,33 @@
+.SearchBar {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.SearchBar input[type="search"] {
+  width: calc(100% - 80px);
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #2e8b57; /* Sea green border */
+  border-radius: 5px 0 0 5px;
+  box-sizing: border-box;
+}
+
+.SearchBar button {
+  width: 80px;
+  height: 42px;
+  background-color: #4ca1af; /* Turquoise green background */
+  color: #ffffff; /* White text color */
+  border: none;
+  font-size: 1rem;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.SearchBar button:hover {
+  background-color: #387c85; /* Darker turquoise green on hover */
+}
+
+
+  

@@ -1,0 +1,110 @@
+.App {
+  text-align: center;
+  background-color: #f0f8ff; /* Light blue background */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+h1 {
+  color: #2e8b57; /* Sea green text color */
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.SearchBar {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.SearchResults {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.Playlist {
+  background-color: #ffffff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Playlist h2 {
+  color: #2e8b57; /* Sea green text color */
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.Playlist input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #2e8b57; /* Sea green border */
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.Tracklist {
+  width: 100%;
+  max-width: 800px;
+}
+
+.Track {
+  background-color: #f0f8ff; /* Light blue background */
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.Track img {
+  width: 64px;
+  height: 64px;
+  margin-right: 20px;
+  border-radius: 50%;
+  border: 2px solid #2e8b57; /* Sea green border */
+}
+
+.Track .Track-information {
+  flex: 1;
+}
+
+.Track .Track-information p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #333; /* Dark text color */
+}
+
+.Track .Track-action {
+  margin-left: auto;
+}
+
+.Track .Track-action button {
+  background-color: #4ca1af; /* Turquoise green background */
+  color: #ffffff; /* White text color */
+  border: none;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.Track .Track-action button:hover {
+  background-color: #387c85; /* Darker turquoise green on hover */
+}
